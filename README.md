@@ -28,6 +28,11 @@ For all the endpoints, you should first create an instance of the client, passin
 client = Dothoop::Client.new('your_oauth_access_token')
 ```
 
+### Account ###
+
+```ruby
+account_information = client.account.info #=> Dothoop::Account
+```
 
 ## Development
 

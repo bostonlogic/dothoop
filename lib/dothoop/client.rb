@@ -22,6 +22,7 @@ module Dothoop
 
     def self.resources
       {
+        account: AccountResource
       }
     end
 
