@@ -40,8 +40,20 @@ account_information = client.account.info #=> Dothoop::Account
 seller = Dothoop::Participant.new(fullName: "Harry Potter", email: "harry@potermore.com", role: "SELLER")
 list_agent = Dothoop::Participant.new(fullName: "Luna Lovegood", email: "luna@potermore.com", role: "LISTING_AGENT")
 loop_it = Dothoop::LoopIt.new(name: "4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", transactionType: "LISTING_FOR_SALE", status: "PRE_LISTING", participants: [seller, list_agent])
-client.loop_it.create(loop, profile_id: client.account.info.defaultProfileId)
-# => Dothoop::LoopIt {:@name=>"4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", :@transactionType=>"LISTING_FOR_SALE", :@status=>"PRE_LISTING", :@participants=>[], :@streetName=>nil, :@streetNumber=>nil, :@unit=>nil, :@city=>nil, :@zipCode=>nil, :@state=>nil, :@country=>nil, :@mlsPropertId=>nil, :@mlsId=>nil, :@templateId=>nil, :@mlsAgentId=>nil, :@id=>1234, :@profileId=>5678, :@created=>"2017-06-02T17:52:06Z", :@updated=>"2017-06-02T17:52:06Z", :@loopUrl=>"https://www.dotloop.com/m/loop?viewId=1325374"}
+client.loop_it.create(loop, profile_id: client.account.info.defaultProfileId) # => Dothoop::LoopIt
+```
+
+### Profile ###
+```ruby
+client.profiles.all #=> [Dothoop::Profile, Dothoop::Profile, ...]
+
+client.profiles.find(profile_id: 1234) #=> Dothoop::Profile
+
+profile = Dothoop::Profile.new(name: "Harry Protter", company: "Dumbledore's Army", phone: "1234567890", fax: "2345678901", address: "4 Privet Drive", city: "Little Whinging", state: "NY", zipcode: "10005")
+client.profiles.create(profile) #=> Dothoop::Profile
+
+name_update = Dothoop::Profile.new(name: "Harry Potter")
+client.profiles.patch(name_update, profile_id: 1234) #=> Dothoop::Profile
 ```
 
 ## Development

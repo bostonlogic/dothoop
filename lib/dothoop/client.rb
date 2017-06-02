@@ -23,7 +23,14 @@ module Dothoop
     def self.resources
       {
         account: AccountResource,
-        loop_it: LoopItResource
+        loop_it: LoopItResource,
+        profiles: ProfileResource
+        # loops: LoopResource#,
+        # loop_details: LoopDetailResource#,
+        # loop_participants: LoopParticipantResource#,
+        # loop_tasks: LoopTaskResource#,
+        # contacts: ContactResource#,
+        # loop_templates: LoopTemplateResource
       }
     end
 
