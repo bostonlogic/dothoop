@@ -56,6 +56,19 @@ name_update = Dothoop::Profile.new(name: "Harry Potter")
 client.profiles.patch(name_update, profile_id: 1234) #=> Dothoop::Profile
 ```
 
+###
+```ruby
+client.loops.all(profile_id: 1234) #=> [Dothoop::Loop, Dothoop::Loop,...]
+
+client.loops.find(profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+
+loop = Dothoop::Loop.new(name: "one loop to rue them all", status: 'PRE_LISTING', transactionType: 'LISTING_FOR_SALE')
+client.loops.create(loop, profile_id: 1234) #=> Dothoop::Loop
+
+update_name = Dothoop::Loop.new(name: "One Loop To Rule Them All")
+client.loops.patch(update_name, profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
