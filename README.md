@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For all the endpoints, you should first create an instance of the client, passing in your oauth access token:
+
+```ruby
+client = Dothoop::Client.new('your_oauth_access_token')
+```
+
 
 ## Development
 
@@ -38,4 +43,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
