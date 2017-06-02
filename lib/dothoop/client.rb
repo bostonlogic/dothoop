@@ -22,7 +22,8 @@ module Dothoop
 
     def self.resources
       {
-        account: AccountResource
+        account: AccountResource,
+        loop_it: LoopItResource
       }
     end
 

@@ -34,6 +34,16 @@ client = Dothoop::Client.new('your_oauth_access_token')
 account_information = client.account.info #=> Dothoop::Account
 ```
 
+### Loop-It ###
+
+```ruby
+seller = Dothoop::Participant.new(fullName: "Harry Potter", email: "harry@potermore.com", role: "SELLER")
+list_agent = Dothoop::Participant.new(fullName: "Luna Lovegood", email: "luna@potermore.com", role: "LISTING_AGENT")
+loop_it = Dothoop::LoopIt.new(name: "4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", transactionType: "LISTING_FOR_SALE", status: "PRE_LISTING", participants: [seller, list_agent])
+client.loop_it.create(loop, profile_id: client.account.info.defaultProfileId)
+# => Dothoop::LoopIt {:@name=>"4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", :@transactionType=>"LISTING_FOR_SALE", :@status=>"PRE_LISTING", :@participants=>[], :@streetName=>nil, :@streetNumber=>nil, :@unit=>nil, :@city=>nil, :@zipCode=>nil, :@state=>nil, :@country=>nil, :@mlsPropertId=>nil, :@mlsId=>nil, :@templateId=>nil, :@mlsAgentId=>nil, :@id=>1234, :@profileId=>5678, :@created=>"2017-06-02T17:52:06Z", :@updated=>"2017-06-02T17:52:06Z", :@loopUrl=>"https://www.dotloop.com/m/loop?viewId=1325374"}
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
