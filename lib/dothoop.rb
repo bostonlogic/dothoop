@@ -7,6 +7,7 @@ module Dothoop
   autoload :Client, 'dothoop/client'
 
   autoload :AccountMapping, 'dothoop/mappings/account_mapping'
+  autoload :ContactMapping, 'dothoop/mappings/contact_mapping'
   autoload :ContractDatesMapping, 'dothoop/mappings/contract_dates_mapping'
   autoload :ContractInfoMapping, 'dothoop/mappings/contract_info_mapping'
   autoload :FinancialsMapping, 'dothoop/mappings/financials_mapping'
@@ -26,6 +27,7 @@ module Dothoop
 
   autoload :BaseModel, 'dothoop/models/base_model'
   autoload :Account, 'dothoop/models/account'
+  autoload :Contact, 'dothoop/models/contact'
   autoload :ContractDates, 'dothoop/models/contract_dates'
   autoload :ContractInfo, 'dothoop/models/contract_info'
   autoload :Financials, 'dothoop/models/financials'
@@ -44,6 +46,7 @@ module Dothoop
   autoload :TaskList, 'dothoop/models/task_list'
 
   autoload :AccountResource, 'dothoop/resources/account_resource'
+  autoload :ContactResource, 'dothoop/resources/contact_resource'
   autoload :LoopDetailResource, 'dothoop/resources/loop_detail_resource'
   autoload :LoopItResource, 'dothoop/resources/loop_it_resource'
   autoload :LoopParticipantResource, 'dothoop/resources/loop_participant_resource'

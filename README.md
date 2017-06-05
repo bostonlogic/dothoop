@@ -105,11 +105,25 @@ client.loop_task_lists.find(profile_id: 1234, loop_id: 5678, task_list_id: 12321
 
 #### Task List Items ####
 ```ruby
-client.loop_task_list_items.all(profile_id: 9507248, loop_id: 59247954, task_list_id: 26961965) #=> [Dothoop::LoopTaskListItem, Dothoop::LoopTaskListItem, ...]
+client.loop_task_list_items.all(profile_id: 1234, loop_id: 5678, task_list_id: 12321) #=> [Dothoop::LoopTaskListItem, Dothoop::LoopTaskListItem, ...]
 
-client.loop_task_list_items.find(profile_id: 9507248, loop_id: 59247954, task_list_id: 26961965, task_list_item_id: 161793090) #=> Dothoop::LoopTaskListItem
+client.loop_task_list_items.find(profile_id: 1234, loop_id: 5678, task_list_id: 12321, task_list_item_id: 18181) #=> Dothoop::LoopTaskListItem
 ```
 
+### Contacts ###
+```ruby
+client.contacts.all #=> [Dothoop::Contact, Dothoop::Contact, ...]
+
+client.contacts.find(contact_id: 43) #=> Dothoop::Contact
+
+contact = Dothoop::Contact.new(first_name: "Hermione", last_name: "Granger", email: "hermione@hogwarts.com", home: "1234567890")
+client.contacts.create(contact) #=> Dothoop::Contact
+
+update_contact = Dothoop::Contact.new(last_name: "weasley", email: "hermione@pottermore.com")
+client.contacts.patch(update_contact, contact_id: 43) #=> Dothoop::Contact
+
+client.contacts.delete(contact_id: 44) #=> true
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
