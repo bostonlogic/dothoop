@@ -15,6 +15,7 @@ module Dothoop
   autoload :LoopDetailMapping, 'dothoop/mappings/loop_detail_mapping'
   autoload :LoopItMapping, 'dothoop/mappings/loop_it_mapping'
   autoload :LoopMapping, 'dothoop/mappings/loop_mapping'
+  autoload :LoopTaskListItemMapping, 'dothoop/mappings/loop_task_list_item_mapping'
   autoload :LoopTaskListMapping, 'dothoop/mappings/loop_task_list_mapping'
   autoload :OfferDatesMapping, 'dothoop/mappings/offer_dates_mapping'
   autoload :ParticipantMapping, 'dothoop/mappings/participant_mapping'
@@ -32,6 +33,7 @@ module Dothoop
   autoload :ListingInformation, 'dothoop/models/listing_information'
   autoload :LoopDetail, 'dothoop/models/loop_detail'
   autoload :LoopIt, 'dothoop/models/loop_it'
+  autoload :LoopTaskListItem, 'dothoop/models/loop_task_list_item'
   autoload :Loop, 'dothoop/models/loop'
   autoload :OfferDates, 'dothoop/models/offer_dates'
   autoload :Participant, 'dothoop/models/participant'
@@ -46,6 +48,7 @@ module Dothoop
   autoload :LoopItResource, 'dothoop/resources/loop_it_resource'
   autoload :LoopParticipantResource, 'dothoop/resources/loop_participant_resource'
   autoload :LoopResource, 'dothoop/resources/loop_resource'
+  autoload :LoopTaskListItemResource, 'dothoop/resources/loop_task_list_item_resource'
   autoload :LoopTaskListResource, 'dothoop/resources/loop_task_list_resource'
   autoload :ProfileResource, 'dothoop/resources/profile_resource'
 

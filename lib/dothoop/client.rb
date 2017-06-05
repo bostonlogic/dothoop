@@ -28,8 +28,8 @@ module Dothoop
         loops: LoopResource,
         loop_details: LoopDetailResource,
         loop_participants: LoopParticipantResource,
-        loop_task_lists: LoopTaskListResource#,
-        # loop_tasks: LoopTaskResource#,
+        loop_task_lists: LoopTaskListResource,
+        loop_task_list_items: LoopTaskListItemResource#,
         # contacts: ContactResource#,
         # loop_templates: LoopTemplateResource
       }

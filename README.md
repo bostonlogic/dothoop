@@ -103,6 +103,13 @@ client.loop_task_lists.all(profile_id: 1234, loop_id: 5678) #=> [Dothoop::TaskLi
 client.loop_task_lists.find(profile_id: 1234, loop_id: 5678, task_list_id: 12321) #=> Dothoop::TaskList
 ```
 
+#### Task List Items ####
+```ruby
+client.loop_task_list_items.all(profile_id: 9507248, loop_id: 59247954, task_list_id: 26961965) #=> [Dothoop::LoopTaskListItem, Dothoop::LoopTaskListItem, ...]
+
+client.loop_task_list_items.find(profile_id: 9507248, loop_id: 59247954, task_list_id: 26961965, task_list_item_id: 161793090) #=> Dothoop::LoopTaskListItem
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
