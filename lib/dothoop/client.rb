@@ -27,7 +27,8 @@ module Dothoop
         profiles: ProfileResource,
         loops: LoopResource,
         loop_details: LoopDetailResource,
-        loop_participants: LoopParticipantResource#,
+        loop_participants: LoopParticipantResource,
+        loop_task_lists: LoopTaskListResource#,
         # loop_tasks: LoopTaskResource#,
         # contacts: ContactResource#,
         # loop_templates: LoopTemplateResource

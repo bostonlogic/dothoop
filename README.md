@@ -93,6 +93,16 @@ client.loop_participants.patch(update_participant, profile_id: 1234, loop_id: 56
  client.loop_participants.delete(profile_id: 1234, loop_id: 5678, participant_id: 91011) #=> true
 ```
 
+### Loop Tasks ###
+
+#### Task Lists ####
+
+```ruby
+client.loop_task_lists.all(profile_id: 1234, loop_id: 5678) #=> [Dothoop::TaskList, Dothoop::TaskList, ...]
+
+client.loop_task_lists.find(profile_id: 1234, loop_id: 5678, task_list_id: 12321) #=> Dothoop::TaskList
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
