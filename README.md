@@ -56,7 +56,7 @@ name_update = Dothoop::Profile.new(name: "Harry Potter")
 client.profiles.patch(name_update, profile_id: 1234) #=> Dothoop::Profile
 ```
 
-###
+### Loop Summaries ###
 ```ruby
 client.loops.all(profile_id: 1234) #=> [Dothoop::Loop, Dothoop::Loop,...]
 
@@ -67,6 +67,15 @@ client.loops.create(loop, profile_id: 1234) #=> Dothoop::Loop
 
 update_name = Dothoop::Loop.new(name: "One Loop To Rule Them All")
 client.loops.patch(update_name, profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+```
+
+### Loop Details ###
+```ruby
+client.loop_details.info(profile_id: 1234, loop_id: 5678)
+
+property_update = Dothoop::Property.new(year_built: "1881", bedrooms: "5", square_footage: "choranaptyxic", school_district: "Hogwarts", type: "Magical", bathtrooms: "5", lot_size: "7")
+update_details = Dothoop::LoopDetail.new(property: property_update)
+client.loop_details.patch(update_details, profile_id: 1234, loop_id: 5678)
 ```
 
 ## Development

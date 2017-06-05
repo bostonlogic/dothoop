@@ -31,3 +31,16 @@ end
 #     ...
 #   ]
 # }
+
+# {
+#   "data": {
+#     "id": 34308,
+#     "name": "Atturo Garay, 3059 Main, Chicago, IL 60614",
+#     "status": "ARCHIVED",
+#     "transactionType": "PURCHASED",
+#     "totalTaskCount": 5,
+#     "completedTaskCount": 3,
+#     "updated": "2013-12-03T11:46:16-05:00",
+#     "loopUrl": "https://www.dootloop.com/m/loop?viewId=34308"
+#   }
+# }
