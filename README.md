@@ -78,6 +78,21 @@ update_details = Dothoop::LoopDetail.new(property: property_update)
 client.loop_details.patch(update_details, profile_id: 1234, loop_id: 5678)
 ```
 
+### Loop Participants ###
+```ruby
+client.loop_participants.all(profile_id: 1234, loop_id: 5678) #=> [Dothoop::Participant, Dothoop::Participant, ...]
+
+client.loop_participants.find(profile_id: 1234, loop_id: 5678, participant_id: 91011) #=> Dothoop::Participant
+
+participant = Dothoop::Participant.new(email: "bellatrix@pottermore.com", name: "Bellatrix LeStrange", role: "LANDLORD")
+client.loop_participants.create(participant, profile_id: 1234, loop_id: 5678) #=> Dothoop::Participant
+
+update_participant = Dothoop::Participant.new(email: "harry@pottermore.com")
+client.loop_participants.patch(update_participant, profile_id: 1234, loop_id: 5678, participant_id: 91011) #=> Dothoop::Participant
+
+ client.loop_participants.delete(profile_id: 1234, loop_id: 5678, participant_id: 91011) #=> true
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

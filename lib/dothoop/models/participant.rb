@@ -1,6 +1,7 @@
 module Dothoop
   class Participant < BaseModel
-    attribute :fullName
+    attribute :id
+    attribute :full_name
     attribute :email
     attribute :role
   end

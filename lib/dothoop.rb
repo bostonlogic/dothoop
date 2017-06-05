@@ -42,6 +42,7 @@ module Dothoop
   autoload :AccountResource, 'dothoop/resources/account_resource'
   autoload :LoopDetailResource, 'dothoop/resources/loop_detail_resource'
   autoload :LoopItResource, 'dothoop/resources/loop_it_resource'
+  autoload :LoopParticipantResource, 'dothoop/resources/loop_participant_resource'
   autoload :LoopResource, 'dothoop/resources/loop_resource'
   autoload :ProfileResource, 'dothoop/resources/profile_resource'
 
