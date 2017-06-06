@@ -1,6 +1,6 @@
 # Dothoop #
 
-[![Build Status](https://travis-ci.org/omundu/dothoop.svg?branch=master)](https://travis-ci.org/omundu/dothoop)
+[![Build Status](https://travis-ci.org/bostonlogic/dothoop.svg?branch=master)](https://travis-ci.org/bostonlogic/dothoop)
 
 Ruby wrapper around the newer [Dotloop Public Api](https://dotloop.github.io/public-api/) (currently version 2). To use this gem, you need to register your application with Dotloop and follow their instructions to generate an OAuth access token from Dotloop.
 
