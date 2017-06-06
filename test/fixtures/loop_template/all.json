@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "total": 5
+  },
+  "data": [
+    {
+      "id": 423,
+      "profileId": 732453,
+      "name": "My Loop Template",
+      "transactionType": "PURCHASE_OFFER",
+      "shared": true,
+      "global": false
+    }
+  ]
+}

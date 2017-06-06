@@ -1,0 +1,22 @@
+{
+  "data": {
+    "Property Address": {
+      "Country": "USA",
+      "Street Number": "333",
+      "Street Name": "Main St",
+      "Unit Number": "123",
+      "City": "San Francisco",
+      "State/Prov": "CA",
+      "Zip/Postal Code": "94105",
+      "County": "USA",
+    },
+    "Financials": {
+      "Sale Commission Rate": "3",
+      "Sale Commission Split % - Buy Side": "50",
+      "Sale Commission Split % - Sell Side": "50",
+      "Sale Commission Total": "10000",
+      "Sale Commission Split $ - Buy Side": "50",
+      "Sale Commission Split $ - Sell Side": "20000",
+    }
+  }
+}
