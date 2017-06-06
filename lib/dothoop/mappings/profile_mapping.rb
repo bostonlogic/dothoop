@@ -16,9 +16,9 @@ module Dothoop
         property :address
         property :city
         property :state
-        property :zipCode
+        property :zip_code, key: 'zipCode'
         property :default
-        property :requiresTemplate
+        property :requires_template, key: 'requiresTemplate'
       end
 
       scoped :create do
@@ -29,7 +29,7 @@ module Dothoop
         property :address
         property :city
         property :state
-        property :zipCode
+        property :zip_code, key: 'zipCode'
       end
 
     end

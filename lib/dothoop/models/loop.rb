@@ -3,12 +3,12 @@ module Dothoop
     attribute :id
     attribute :name
     attribute :status
-    attribute :transactionType
-    attribute :totalTaskCount
-    attribute :completedTaskCount
+    attribute :transaction_type
+    attribute :total_task_count
+    attribute :completed_task_count
     attribute :updated
     attribute :created
-    attribute :loopUrl
+    attribute :loop_url
   end
 end
 

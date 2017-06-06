@@ -1,10 +1,8 @@
-# Dothoop
+# Dothoop #
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dothoop`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ruby wrapper around the newer [Dotloop Public Api](https://dotloop.github.io/public-api/) (currently version 2). To use this gem, you need to register your application with Dotloop and follow their instructions to generate an OAuth access token from Dotloop.
 
-TODO: Delete this and the text above, and describe your gem
-
-## Installation
+## Installation ##
 
 Add this line to your application's Gemfile:
 
@@ -20,7 +18,7 @@ Or install it yourself as:
 
     $ gem install dothoop
 
-## Usage
+## Usage ##
 
 For all the endpoints, you should first create an instance of the client, passing in your oauth access token:
 
@@ -37,10 +35,10 @@ account_information = client.account.info #=> Dothoop::Account
 ### Loop-It ###
 
 ```ruby
-seller = Dothoop::Participant.new(fullName: "Harry Potter", email: "harry@potermore.com", role: "SELLER")
-list_agent = Dothoop::Participant.new(fullName: "Luna Lovegood", email: "luna@potermore.com", role: "LISTING_AGENT")
-loop_it = Dothoop::LoopIt.new(name: "4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", transactionType: "LISTING_FOR_SALE", status: "PRE_LISTING", participants: [seller, list_agent])
-client.loop_it.create(loop, profile_id: client.account.info.defaultProfileId) # => Dothoop::LoopIt
+seller = Dothoop::Participant.new(full_name: "Harry Potter", email: "harry@potermore.com", role: "SELLER")
+list_agent = Dothoop::Participant.new(full_name: "Luna Lovegood", email: "luna@pottermore.com", role: "LISTING_AGENT")
+loop_it = Dothoop::LoopIt.new(name: "4 Privet Drive, Little Whinging, Surrey, England, Great Britain - Harry Potter", transaction_type: "LISTING_FOR_SALE", status: "PRE_LISTING", participants: [seller, list_agent])
+client.loop_it.create(loop_it, profile_id: client.account.info.default_profile_id) # => Dothoop::LoopIt
 ```
 
 ### Profile ###
@@ -71,11 +69,11 @@ client.loops.patch(update_name, profile_id: 1234, loop_id: 5678) #=> Dothoop::Lo
 
 ### Loop Details ###
 ```ruby
-client.loop_details.info(profile_id: 1234, loop_id: 5678)
+client.loop_details.info(profile_id: 1234, loop_id: 5678) #=> Dothoop::LoopDetail
 
 property_update = Dothoop::Property.new(year_built: "1881", bedrooms: "5", square_footage: "choranaptyxic", school_district: "Hogwarts", type: "Magical", bathtrooms: "5", lot_size: "7")
 update_details = Dothoop::LoopDetail.new(property: property_update)
-client.loop_details.patch(update_details, profile_id: 1234, loop_id: 5678)
+client.loop_details.patch(update_details, profile_id: 1234, loop_id: 5678) #=> Dothoop::LoopDetail
 ```
 
 ### Loop Participants ###
@@ -132,17 +130,20 @@ client.loop_templates.all(profile_id: 1234) #=> [Dothoop::LoopTemplate, Dothoop:
 client.loop_templates.all(profile_id: 1234, loop_template_id: 7) #=> Dothoop::LoopTemplate
 ```
 
-## Development
+## Development ##
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
-## Contributing
+## TO DO ##
+Write tests
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dothoop. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+## Contributing ##
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/bostonlogic/dothoop. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
-## License
+## License ##
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

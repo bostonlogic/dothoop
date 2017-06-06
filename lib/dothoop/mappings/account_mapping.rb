@@ -8,10 +8,10 @@ module Dothoop
 
       scoped :read do
         property :id
-        property :firstName
-        property :lastName
+        property :first_name, key: 'firstName'
+        property :last_name, key: 'lastName'
         property :email
-        property :defaultProfileId
+        property :default_profile_id, key: 'defaultProfileId'
       end
 
     end

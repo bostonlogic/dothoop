@@ -1,10 +1,10 @@
 module Dothoop
   class Account < BaseModel
     attribute :id
-    attribute :firstName
-    attribute :lastName
+    attribute :first_name
+    attribute :last_name
     attribute :email
-    attribute :defaultProfileId
+    attribute :default_profile_id
   end
 end
 

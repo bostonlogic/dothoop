@@ -9,8 +9,8 @@ module Dothoop
     attribute :address
     attribute :city
     attribute :state
-    attribute :zipCode
-    attribute :requiresTemplate
+    attribute :zip_code
+    attribute :requires_template
 
     attribute :default
   end

@@ -5,23 +5,23 @@ module Dothoop
     kartograph do
       mapping Loop
       root_key singular: 'data', plural: 'data', scopes: [:read]
-      
+
       scoped :read do
         property :id
         property :name
         property :status
-        property :transactionType
-        property :totalTaskCount
-        property :completedTaskCount
+        property :transaction_type, key: 'transactionType'
+        property :total_task_count, key: 'totalTaskCount'
+        property :completed_task_count, key: 'completedTaskCount'
         property :updated
         property :created
-        property :loopUrl
+        property :loop_url, Key: 'loopUrl'
       end
 
       scoped :create do
         property :name
         property :status
-        property :transactionType
+        property :transaction_type, key: 'transactionType'
       end
 
     end

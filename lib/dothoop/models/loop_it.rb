@@ -1,26 +1,26 @@
 module Dothoop
   class LoopIt < BaseModel
     attribute :name
-    attribute :transactionType
+    attribute :transaction_type
     attribute :status
-    attribute :streetName
-    attribute :streetNumber
+    attribute :street_name
+    attribute :street_number
     attribute :unit
     attribute :city
-    attribute :zipCode
+    attribute :zip_code
     attribute :state
     attribute :country
-    attribute :mlsPropertId
-    attribute :mlsId
+    attribute :mls_property_id
+    attribute :mls_id
     attribute :participants, Array(Participant)
-    attribute :templateId
-    attribute :mlsAgentId
+    attribute :template_id
+    attribute :mls_agent_id
 
     attribute :id
-    attribute :profileId
+    attribute :profile_id
     attribute :created
     attribute :updated
-    attribute :loopUrl
+    attribute :loop_url
   end
 end
 

@@ -8,30 +8,30 @@ module Dothoop
 
       scoped :create do
         property :name
-        property :transactionType
+        property :transaction_type, key: 'transactionType'
         property :status
-        property :streetName
-        property :streetNumber
+        property :street_name, key: 'streetName'
+        property :street_number, key: 'streetNumber'
         property :unit
         property :city
-        property :zipCode
+        property :zip_code, key: 'zipCode'
         property :state
         property :country
-        property :mlsPropertId
-        property :mlsId
-        property :templateId
-        property :mlsAgentId
+        property :mls_property_id, key: 'mlsPropertId'
+        property :mls_id, key: 'mlsId'
+        property :template_id, key: 'templateId'
+        property :mls_agent_id, key: 'mlsAgentId'
       end
 
       scoped :read do
         property :id
-        property :profileId
+        property :profile_id, key: 'profileId'
         property :name
-        property :transactionType
+        property :transaction_type, key: 'transactionType'
         property :status
         property :created
         property :updated
-        property :loopUrl
+        property :loop_url, key: 'loopUrl'
       end
 
     end
