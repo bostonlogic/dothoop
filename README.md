@@ -124,6 +124,14 @@ client.contacts.patch(update_contact, contact_id: 43) #=> Dothoop::Contact
 
 client.contacts.delete(contact_id: 44) #=> true
 ```
+
+### Loop Template ###
+```ruby
+client.loop_templates.all(profile_id: 1234) #=> [Dothoop::LoopTemplate, Dothoop::LoopTemplate, ...]
+
+client.loop_templates.all(profile_id: 1234, loop_template_id: 7) #=> Dothoop::LoopTemplate
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
