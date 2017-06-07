@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": 1,
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "email": "harry.potter@hogwarts.edu",
+    "home": "(415) 8936 331",
+    "office": "(415) 1213 651",
+    "fax": "(415) 8655 737",
+    "address": "2100 Waterview Dr",
+    "city": "San Francisco",
+    "zipCode": "94114",
+    "state": "CA",
+    "country": "US",
+    "updated": "2017-04-20T03:48:30Z"
+  }
+}
