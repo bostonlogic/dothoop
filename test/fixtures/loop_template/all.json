@@ -4,12 +4,44 @@
   },
   "data": [
     {
-      "id": 423,
-      "profileId": 732453,
-      "name": "My Loop Template",
+      "id": 421,
+      "profileId": 4,
+      "name": "Purchase Loop Template",
       "transactionType": "PURCHASE_OFFER",
       "shared": true,
       "global": false
+    },
+    {
+      "id": 422,
+      "profileId": 4,
+      "name": "Listing Loop Template",
+      "transactionType": "LISTING_FOR_SALE",
+      "shared": true,
+      "global": false
+    },
+    {
+      "id": 423,
+      "profileId": 4,
+      "name": "Lease Listing Loop Template",
+      "transactionType": "LISTING_FOR_LEASE",
+      "shared": true,
+      "global": false
+    },
+    {
+      "id": 424,
+      "profileId": 4,
+      "name": "Lease Offer Loop Template",
+      "transactionType": "LEASE_OFFER",
+      "shared": true,
+      "global": false
+    },
+    {
+      "id": 425,
+      "profileId": 4,
+      "name": "Miscellaneous Loop Template",
+      "transactionType": "REAL_ESTATE_OTHER",
+      "shared": false,
+      "global": true
     }
   ]
 }

@@ -1,13 +1,69 @@
 {
   "meta": {
-    "total": 3
+    "total": 5
   },
   "data": [
     {
-      "id": 3,
-      "name": "My Profile",
+      "id": 1,
+      "name": "Albus Dumbledore",
       "type": "INDIVIDUAL",
-      "company": "MyCompany",
+      "company": "Order of the Phoenix",
+      "phone": "+0 (123) 456 7890",
+      "fax": "+0 (123) 456 7890",
+      "address": "1234 Wall St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10005",
+      "default": false,
+      "requiresTemplate": false
+    },
+    {
+      "id": 2,
+      "name": "Wolfric Dumbledore",
+      "type": "ASSOCIATION",
+      "company": "International Confederation of Wizards",
+      "phone": "+0 (123) 456 7890",
+      "fax": "+0 (123) 456 7890",
+      "address": "1234 Wall St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10005",
+      "default": false,
+      "requiresTemplate": false
+    },
+    {
+      "id": 3,
+      "name": "Percival Dumbledore",
+      "type": "OFFICE",
+      "company": "Wizengamot",
+      "phone": "+0 (123) 456 7890",
+      "fax": "+0 (123) 456 7890",
+      "address": "1234 Wall St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10005",
+      "default": false,
+      "requiresTemplate": false
+    },
+    {
+      "id": 4,
+      "name": "Brian Dumbledore",
+      "type": "TEAM",
+      "company": "Obscurial Studies",
+      "phone": "+0 (123) 456 7890",
+      "fax": "+0 (123) 456 7890",
+      "address": "1234 Wall St",
+      "city": "New York",
+      "state": "NY",
+      "zipCode": "10005",
+      "default": false,
+      "requiresTemplate": true
+    },
+    {
+      "id": 5,
+      "name": "Professor Dumbledore",
+      "type": "NATIONAL_PARTNER",
+      "company": "Hogwarts School of Witchcraft and Wizardry",
       "phone": "+0 (123) 456 7890",
       "fax": "+0 (123) 456 7890",
       "address": "1234 Wall St",
@@ -15,7 +71,7 @@
       "state": "NY",
       "zipCode": "10005",
       "default": true,
-      "requiresTemplate": true
+      "requiresTemplate": false
     }
   ]
 }
