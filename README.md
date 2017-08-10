@@ -129,7 +129,7 @@ client.contacts.delete(contact_id: 44) #=> true
 ```ruby
 client.loop_templates.all(profile_id: 1234) #=> [Dothoop::LoopTemplate, Dothoop::LoopTemplate, ...]
 
-client.loop_templates.all(profile_id: 1234, loop_template_id: 7) #=> Dothoop::LoopTemplate
+client.loop_templates.find(profile_id: 1234, loop_template_id: 7) #=> Dothoop::LoopTemplate
 ```
 
 ## Development ##

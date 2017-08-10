@@ -11,7 +11,6 @@ module Dothoop
         body do |object|
           hoop = LoopItMapping.hash_for(:create, object)
           hoop[:participants] = ParticipantMapping.hash_collection_for(:create, object.participants)
-          puts hoop.to_json.inspect
           hoop.to_json
         end
         path "#{Dothoop.configuration.path_url}/loop-it"
