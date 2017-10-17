@@ -1,3 +1,33 @@
+require 'test_helper'
+
+class Dothoop::LoopResourceTest < Minitest::Test
+
+  class All < Minitest::Test
+    def test_returns_an_array_of_loops
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Find < Minitest::Test
+    def test_returns_a_loop
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Create < Minitest::Test
+    def test_returns_a_newly_created_loop
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Patch < Minitest::Test
+    def test_returns_an_updated_loop
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+end
+
 # GET /profile/:profile_id/loop[?batch_size=<batch_size>&batch_number=<batch_number>&sort=<sort>&updated_min=<updated_min>]
 
 # Response

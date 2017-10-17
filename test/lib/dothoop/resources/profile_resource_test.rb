@@ -1,3 +1,33 @@
+require 'test_helper'
+
+class Dothoop::ProfileResourceTest < Minitest::Test
+
+  class All < Minitest::Test
+    def test_returns_an_array_of_profiles
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Find < Minitest::Test
+    def test_returns_a_profile
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Create < Minitest::Test
+    def test_returns_a_newly_created_profile
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Patch < Minitest::Test
+    def test_returns_an_updated_profile
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+end
+
 # GET /profile
 
 # Response

@@ -1,3 +1,20 @@
+require 'test_helper'
+
+class Dothoop::LoopTaskListItemResourceTest < Minitest::Test
+
+  class All < Minitest::Test
+    def test_returns_an_array_of_loop_task_list_items
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+  class Find < Minitest::Test
+    def test_returns_a_loop_task_list
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+end
 # GET /profile/:profile_id/loop/:loop_id/tasklist/:task_list_id/task
 
 # Response

@@ -1,3 +1,15 @@
+require 'test_helper'
+
+class Dothoop::LoopItResourceTest < Minitest::Test
+
+  class Create < Minitest::Test
+    def test_returns_a_created_loop_summary
+      skip('Need to decided whether and what to test here')
+    end
+  end
+
+end
+
 # POST /loop-it?profile_id=4711
 # {
 #   "name": "Brian Erwin",
