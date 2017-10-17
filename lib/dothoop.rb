@@ -62,4 +62,9 @@ module Dothoop
 
   autoload :ErrorMapping, 'dothoop/mappings/error_mapping'
   Error = Class.new(StandardError)
+  UnauthorizedError = Class.new(Dothoop::Error)
+  ForbiddenError = Class.new(Dothoop::Error)
+  NotFoundError = Class.new(Dothoop::Error)
+  UnprocessableEntityError = Class.new(Dothoop::Error)
+  TooManyRequestsError = Class.new(Dothoop::Error)
 end
