@@ -10,7 +10,7 @@ module Dothoop
         handler(200) { |response| LoopTemplateMapping.extract_collection(response.body, :read) }
       end
 
-      # GET /profile/:profile_id/loop/:loop_id/tasklist/:task_list_id
+      # GET /profile/:profile_id/loop-template/:loop_template_id
       action :find do
         verb :get
         path "#{Dothoop.configuration.path_url}/profile/:profile_id/loop-template/:loop_template_id"
