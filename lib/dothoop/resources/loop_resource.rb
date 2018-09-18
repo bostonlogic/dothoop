@@ -35,7 +35,10 @@ module Dothoop
         handler(200) { |response| LoopMapping.extract_single(response.body, :read) }
       end
 
+    end
 
+    def all(*args)
+      PaginatedResource.new(action(:all), self, *args)
     end
 
   end
