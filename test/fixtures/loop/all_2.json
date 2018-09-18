@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "total": 8
+  },
+  "data": [
+    {
+      "id": 34306,
+      "name": "Malfoy Manor, Wiltshire, England, Great Britain",
+      "status": "SOLD",
+      "transactionType": "PURCHASE_OFFER",
+      "totalTaskCount": 5,
+      "completedTaskCount": 3,
+      "updated": "2017-05-30T21:42:17Z",
+      "created": "2017-05-17T01:18:37Z",
+      "loopUrl": "https://www.dootloop.com/m/loop?viewId=34306"
+    },
+    {
+      "id": 34307,
+      "name": "Spinner's End, Cokeworth, Midlands, England, Great Britain",
+      "status": "ARCHIVED",
+      "transactionType": "LISTING_FOR_SALE",
+      "totalTaskCount": 5,
+      "completedTaskCount": 3,
+      "updated": "2017-05-30T21:42:17Z",
+      "created": "2017-05-17T01:18:37Z",
+      "loopUrl": "https://www.dootloop.com/m/loop?viewId=34307"
+    },
+    {
+      "id": 34308,
+      "name": "Shrieking Shack, Hogsmeade, Scotland, Great Britain",
+      "status": "UNDER_CONTRACT",
+      "transactionType": "LISTING_FOR_LEASE",
+      "totalTaskCount": 5,
+      "completedTaskCount": 3,
+      "updated": "2017-05-30T21:42:17Z",
+      "created": "2017-05-17T01:18:37Z",
+      "loopUrl": "https://www.dootloop.com/m/loop?viewId=34308"
+    }
+  ]
+}

@@ -47,6 +47,8 @@ module Dothoop
   autoload :Referral, 'dothoop/models/referral'
   autoload :TaskList, 'dothoop/models/task_list'
 
+  autoload :MetaInformation, 'dothoop/models/meta_information'
+
   autoload :AccountResource, 'dothoop/resources/account_resource'
   autoload :ContactResource, 'dothoop/resources/contact_resource'
   autoload :LoopDetailResource, 'dothoop/resources/loop_detail_resource'
@@ -59,6 +61,7 @@ module Dothoop
   autoload :ProfileResource, 'dothoop/resources/profile_resource'
 
   autoload :ErrorHandlingResourcable, 'dothoop/error_handling_resourcable'
+  autoload :PaginatedResource, 'dothoop/paginated_resource'
 
   autoload :ErrorMapping, 'dothoop/mappings/error_mapping'
   Error = Class.new(StandardError)
