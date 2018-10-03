@@ -8,7 +8,7 @@
       "City": "San Francisco",
       "State/Prov": "CA",
       "Zip/Postal Code": "94105",
-      "County": "USA",
+      "County": "San Francisco"
     },
     "Financials": {
       "Sale Commission Rate": "3",
@@ -16,7 +16,7 @@
       "Sale Commission Split % - Sell Side": "50",
       "Sale Commission Total": "10000",
       "Sale Commission Split $ - Buy Side": "50",
-      "Sale Commission Split $ - Sell Side": "20000",
+      "Sale Commission Split $ - Sell Side": "20000"
     },
     "Contract Dates": {
       "Contract Agreement Date": "01/31/2017",
@@ -26,8 +26,7 @@
       "Inspection Date": "01/31/2017",
       "Offer Date": "01/31/2017",
       "Offer Expiration Date": "01/31/2017",
-      "Occupancy Date": "01/31/2017",
-      "Offer Date": "01/31/2017"
+      "Occupancy Date": "01/31/2017"
     },
     "Contract Info": {
       "Transaction Number": "1234",
