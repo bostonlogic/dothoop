@@ -13,7 +13,7 @@ module Dothoop
         property :offer_dates, key: 'Offer Dates',  include: OfferDatesMapping
         property :contract_info, key: 'Contract Info',  include: ContractInfoMapping
         property :referral, key: 'Referral',  include: ReferralMapping
-        property :listing_information, key: 'ListingI nformation',  include: ListingInformationMapping
+        property :listing_information, key: 'Listing Information',  include: ListingInformationMapping
         property :geographic_description, key: 'Geographic Description',  include: GeographicDescriptionMapping
         property :property, key: 'Property',  include: PropertyMapping
       end

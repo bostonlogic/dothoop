@@ -1,0 +1,56 @@
+{
+  "data": {
+    "Property Address": {
+      "Country": "Equestria",
+      "Street Number": "629",
+      "Street Name": "Apple Orchard Ln",
+      "Unit Number": "6",
+      "City": "Ponyville",
+      "State/Prov": "Ponyville",
+      "Zip/Postal Code": "HAYBALE-1",
+      "County": "Ponyville",
+      "MLS Number": "EQ1234",
+      "Parcel/Tax ID": "012334567"
+    },
+    "Financials": {
+      "Purchase/Sale Price": "650,000",
+      "Sale Commission Rate": "6%",
+      "Sale Commission Split % - Buy Side": "3%",
+      "Sale Commission Split % - Sell Side": "3%",
+      "Earnest Money Amount": "25,000",
+      "Earnest Money Held By": "Ponyville Realty Group"
+    },
+    "Contract Dates": {
+      "Contract Agreement Date": "06/15/2016",
+      "Closing Date": "08/16/2016"
+    },
+    "Offer Dates": {
+      "Inspection Date": "06/17/2016",
+      "Offer Date": "06/15/2016"
+    },
+    "Contract Info": {
+      "Type": "commercial"
+    },
+    "Referral": {
+      "Referral %": "1.5%",
+      "Referral Source": "Rarity"
+    },
+    "Listing Information": {
+      "Expiration Date": "12/06/2016",
+      "Listing Date": "06/06/2016",
+      "Original Price": "735,000.00",
+      "Current Price": "735,000.00"
+    },
+    "Geographic Description": {
+      "Legal Description": "LOVELY BUILDING IN AWESOME LOCATION WITH ALL THE FIXINGS - 1234"
+    },
+    "Property": {
+      "Year Built": "1974",
+      "Bedrooms": "2",
+      "Square Footage": "1284",
+      "Type": "Condo",
+      "Bathrooms": "2",
+      "Lot Size": "0"
+    }
+  }
+}

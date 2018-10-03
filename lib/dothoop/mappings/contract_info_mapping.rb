@@ -7,8 +7,8 @@ module Dothoop
 
       scoped :read, :patch do
         property :transaction_number, key: 'Transaction Number'
-        property :class, key: 'Class'
-        property :type, key: 'Type'
+        property :contract_class, key: 'Class'
+        property :contract_type, key: 'Type'
       end
 
     end
