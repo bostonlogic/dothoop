@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 34401,
+    "profileId": 42,
+    "ownerProfileId": 42,
+    "name": "12 Grimmauld Place, Islington, London, England",
+    "transactionType": "LISTING_FOR_SALE",
+    "totalTaskCount": 0,
+    "completedTaskCount": 0,
+    "status": "PRE_LISTING",
+    "created": "2018-10-06T23:56:40Z",
+    "updated": "2018-10-06T23:56:40Z",
+    "loopUrl": "https://www.dotloop.com/m/loop?viewId=34401"
+  }
+}

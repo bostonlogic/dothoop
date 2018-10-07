@@ -5,8 +5,10 @@ class Dothoop::LoopDetailResourceTest < Minitest::Test
   class Info < Minitest::Test
 
     def setup
-      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/1/loop/1/detail").to_return(body: api_fixture('loop_detail/info'))
-      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/1/loop/1234/detail").to_return(body: api_fixture('loop_detail/1234'))
+      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/1/loop/1/detail").
+        to_return(body: api_fixture('loop_detail/info'))
+      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/1/loop/1234/detail").
+        to_return(body: api_fixture('loop_detail/1234'))
     end
 
     def test_returns_the_details_of_a_loop
