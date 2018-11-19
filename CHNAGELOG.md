@@ -1,3 +1,6 @@
+### 0.1.3 ###
+* Relax version dependency for Faraday
+
 ### 0.1.0 ###
 * Added pagination to the `loops.all` call
 * Added specs to `rooms.all` as well
