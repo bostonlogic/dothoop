@@ -1,3 +1,6 @@
+### 0.1.4 ###
+* Bumping Faraday version to the 0.15.x range
+
 ### 0.1.3 ###
 * Relax version dependency for Faraday
 
