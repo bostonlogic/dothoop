@@ -57,16 +57,39 @@ client.profiles.patch(name_update, profile_id: 1234) #=> Dothoop::Profile
 ```
 
 ### Loop Summaries ###
+Fetching all loops will return a paginated resource that can then be iterated over to yield loops. Both `#each` and `#map` can be used to do this.
+
+Fetch all the loops in default batch sizes (20):
 ```ruby
-client.loops.all(profile_id: 1234) #=> [Dothoop::Loop, Dothoop::Loop,...]
+dotloop_loops = client.loops.all(profile_id: 1234) #=> [Dothoop::PaginatedResource]
+dotloop_loops.map{|dotloop_loop| dotloop_loop} #=> [Dothoop::Loop, Dothoop::Loop, ...]
+```
+You can set the number of loops per batch. The max allowed by Dotloop is 100:
+```ruby
+dotloop_loops = client.loops.all(profile_id: 1234, batch_size: 100) #=> [Dothoop::PaginatedResource]
+dotloop_loops.map{|dotloop_loop| dotloop_loop} #=> [Dothoop::Loop, Dothoop::Loop...up to 100]
+```
+You can limit how many batches you want returned:
+```ruby
+dotloop_loops = client.loops.all(profile_id: 1234, batch_size: 1, single_batch: true) #=> [Dothoop::PaginatedResource]
+dotloop_loops.map{|dotloop_loop| dotloop_loop} #=> [Dothoop::Loop]
+```
 
-client.loops.find(profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+Fetching a single loop can requires the loops id:
+```ruby
+dotloop_loop = client.loops.find(profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+```
 
-loop = Dothoop::Loop.new(name: "one loop to rue them all", status: 'PRE_LISTING', transactionType: 'LISTING_FOR_SALE')
-client.loops.create(loop, profile_id: 1234) #=> Dothoop::Loop
+The loop-it endpoint is preferred, however you can create loops via a `loops#create`. The resulting loop is returned on success:
+```ruby
+loop_data = Dothoop::Loop.new(name: "one loop to rue them all", status: 'PRE_LISTING', transactionType: 'LISTING_FOR_SALE')
+dotloop_loop = client.loops.create(loop_data, profile_id: 1234) #=> Dothoop::Loop
+```
 
+To update a loop, just pass the `Dothoop::Loop` instance with the attributes to update defined to `loops#patch`. The updated loop is returned on success:
+```ruby
 update_name = Dothoop::Loop.new(name: "One Loop To Rule Them All")
-client.loops.patch(update_name, profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
+dotloop_loop = client.loops.patch(update_name, profile_id: 1234, loop_id: 5678) #=> Dothoop::Loop
 ```
 
 ### Loop Details ###

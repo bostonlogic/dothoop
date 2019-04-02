@@ -49,7 +49,8 @@ module Dothoop
 
     def total_pages
       return nil if self.total.nil?
-
+      return 1 if @options.fetch(:single_batch, false)
+      
       (self.total.to_f / batch_size.to_f).ceil
     end
 

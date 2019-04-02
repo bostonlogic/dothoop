@@ -11,7 +11,7 @@ class Dothoop::LoopResourceTest < Minitest::Test
 
       connection = Dothoop::Client.new('access_token').connection
       resource = Dothoop::LoopResource.new(connection: connection)
-      
+
       loops = resource.all(profile_id: 42)
 
       assert_instance_of Dothoop::Loop, loops.first
@@ -35,6 +35,24 @@ class Dothoop::LoopResourceTest < Minitest::Test
       assert_instance_of Dothoop::Loop, loops.first
       assert_equal [34301, 34302, 34303, 34304, 34305, 34306, 34307, 34308], loops.map(&:id)
       assert_equal 8, loops.map(&:id).size
+    end
+
+    def test_returns_an_array_of_a_single_batch_of_loops_when_requested
+      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/42/loop").
+        with(query: {batch_number: 1, batch_size: 5}).
+        to_return(body: api_fixture('loop/all_1'))
+      stub_request(:get, "https://api-gateway.dotloop.com/public/v2/profile/42/loop").
+        with(query: {batch_number: 2, batch_size: 5}).
+        to_return(body: api_fixture('loop/all_2'))
+
+      connection = Dothoop::Client.new('access_token').connection
+      resource = Dothoop::LoopResource.new(connection: connection)
+
+      loops = resource.all(profile_id: 42, batch_size: 5, single_batch: true)
+
+      assert_instance_of Dothoop::Loop, loops.first
+      assert_equal [34301, 34302, 34303, 34304, 34305], loops.map(&:id)
+      assert_equal 5, loops.map(&:id).size
     end
 
   end
