@@ -1,7 +1,7 @@
 ### 0.1.5 ###
 * Added the ability to limit the `loops#all` call a single batch. This can be done by passing a `single_batch: true` option the call as one of the arguments. i.e. `client.loops.all(profile_id: 1234, batch_size: 1, single_batch: true)` to only return the a collection of 1 loop.
 
-### 0.1.4 ###Â
+### 0.1.4 ###
 * Bumping Faraday version to the 0.15.x range
 
 ### 0.1.3 ###
