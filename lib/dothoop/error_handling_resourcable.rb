@@ -1,5 +1,3 @@
-require 'pry'
-
 module ErrorHandlingResourcable
   def self.included(base)
     base.send(:resources) do
