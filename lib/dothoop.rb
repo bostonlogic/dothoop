@@ -70,4 +70,5 @@ module Dothoop
   NotFoundError = Class.new(Dothoop::Error)
   UnprocessableEntityError = Class.new(Dothoop::Error)
   TooManyRequestsError = Class.new(Dothoop::Error)
+  RedirectError = Class.new(Dothoop::Error)
 end
