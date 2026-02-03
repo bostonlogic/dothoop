@@ -30,4 +30,8 @@ class DothoopTest < Minitest::Test
     assert Dothoop::TooManyRequestsError
   end
 
+  def test_redirect_error_is_initialized
+    assert Dothoop::RedirectError
+  end
+
 end

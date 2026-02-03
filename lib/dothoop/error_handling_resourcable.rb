@@ -4,6 +4,8 @@ module ErrorHandlingResourcable
       default_handler do |response|
         if (200...299).include?(response.status)
           next
+        elsif response.status == 301
+          raise Dothoop::RedirectError.new({status: response.status, body: response.body, redirect: response.headers[:location]})
         elsif response.status == 401
           raise Dothoop::UnauthorizedError.new("#{response.status}: #{response.body}")
         elsif response.status == 403
